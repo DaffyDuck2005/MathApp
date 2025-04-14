@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rfh4fg4tgyit4guy_tfhtgyith"
+        tools:srcCompat="@drawable/rfh4fg4tgyit4guy_tfhtgyith" />
+
+    <TextView
+        android:id="@+id/edtMathApp"
+        android:layout_width="200dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:text="Math App"
+        android:textAlignment="center"
+        android:textColor="#FBF5F5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edtHead"
+        android:layout_width="168dp"
+        android:layout_height="47dp"
+        android:text="Enter 2 Numbers Below"
+        android:textAlignment="center"
+        android:textColor="#F4F1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/edtMathApp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Number 1"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FBF5F5"
+        android:textColorHighlight="#F0ECEC"
+        android:textColorHint="#EFE7E7"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtHead"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Switch
+        android:id="@+id/switchA"
+        android:layout_width="126dp"
+        android:layout_height="24dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="#F6EDED"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switchS"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#FBF6F6"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switchM"
+        android:layout_width="123dp"
+        android:layout_height="28dp"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="#F6EFEF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switchD"
+        android:layout_width="123dp"
+        android:layout_height="29dp"
+        android:text="/"
+        android:textAlignment="center"
+        android:textColor="#FBF4F4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchM"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Number 2"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FDF6F6"
+        android:textColorHint="#FAF0F0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchD"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/edtAnswer"
+        android:layout_width="400dp"
+        android:layout_height="165dp"
+        android:hint="Answer"
+        android:textAlignment="center"
+        android:textColor="#FBF0F0"
+        android:textColorHint="#FAF1F1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="184dp"
+        android:layout_height="58dp"
+        android:text="Calculate "
+        android:textAlignment="center"
+        android:textColor="#F8F3F3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="191dp"
+        android:layout_height="57dp"
+        android:text="Reset"
+        android:textAlignment="center"
+        android:textColor="#FAF1F1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalc"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
