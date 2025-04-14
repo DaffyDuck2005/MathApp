@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         val btnReset = findViewById<Button>(R.id.btnReset)
 
         btnCalc.setOnClickListener {
-            val num1 = Number1.text.toString().toInt()
-            val num2 = Number2.text.toString().toInt()
+            val num1 = Number1.text.toString().toIntOrNull()
+            val num2 = Number2.text.toString().toIntOrNull()
             if (num1 == null || num2 == null) {
                 Answer.text = "Invalid Input"
                 return@setOnClickListener
